@@ -1,10 +1,7 @@
 function findAccountById(accounts, id) {
     const FOUND_ACCOUNT = accounts.find((account) => account.id === id);
-    if(FOUND_ACCOUNT)
-      return FOUND_ACCOUNT;
-    else {
-      return "id not found";
-    }
+
+    return FOUND_ACCOUNT ? FOUND_ACCOUNT : "id not found";
 }
 
 function sortAccountsByLastName(accounts) {
